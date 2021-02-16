@@ -2,5 +2,5 @@ require "httparty"
 
 class BaseService
   include HTTParty
-  base_uri "http://rocklov-web:3000"
+  base_uri "http://rocklov-api:3333"
 end
