@@ -2,7 +2,7 @@ class LoginPage
   include Capybara::DSL
 
   def open
-    visit "localhost:3000/"
+    visit "rocklov-web:3000/"
   end
 
   def with(email, password)
