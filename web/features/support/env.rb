@@ -17,9 +17,9 @@ when "chrome_headless"
   version = Capybara::Selenium::Driver.load_selenium
   options_key = Capybara::Selenium::Driver::CAPS_VERSION.satisfied_by?(version) ? :capabilities : :options
   browser_options = ::Selenium::WebDriver::Chrome::Options.new.tap do |opts|
-    opts.add_argument('--headless')
-    opts.add_argument('--disable-gpu') 
-    opts.add_argument('--disable-site-isolation-trials')
+    opts.add_argument '--headless'
+    opts.add_argument '--disable-gpu'
+    opts.add_argument '--disable-site-isolation-trials'
     opts.args << '--no sandbox'
     opts.args << '--disable-dev-shm-usage'
   end
