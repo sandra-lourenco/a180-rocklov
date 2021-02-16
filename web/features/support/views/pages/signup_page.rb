@@ -2,7 +2,7 @@ class SignupPage
   include Capybara::DSL
 
   def open
-    visit "http://localhost:3000/signup"
+    visit "http://rocklov-web:3000/signup"
   end
 
   def create(user)
